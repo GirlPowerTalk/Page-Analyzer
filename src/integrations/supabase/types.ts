@@ -108,6 +108,33 @@ export type Database = {
         }
         Relationships: []
       }
+      "user_service_accounts": {
+  Row: {
+    id: string;
+    user_id: string;
+    client_email: string;
+    private_key: string;
+    created_at: string | null;
+    updated_at: string | null;
+  };
+  Insert: {
+    user_id: string;
+    client_email: string;
+    private_key: string;
+    created_at?: string | null;
+    updated_at?: string | null;
+    id?: string;
+  };
+  Update: {
+    user_id?: string;
+    client_email?: string;
+    private_key?: string;
+    created_at?: string | null;
+    updated_at?: string | null;
+    id?: string;
+  };
+  Relationships: [];
+};
     }
     Views: {
       [_ in never]: never

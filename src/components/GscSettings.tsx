@@ -167,7 +167,7 @@ const GscSettings = () => {
 
   return (
     <div className="space-y-4">
-      <Alert variant="default" className="bg-blue-50 border-blue-200">
+      {/* <Alert variant="default" className="bg-blue-50 border-blue-200">
         <AlertCircle className="h-4 w-4 text-blue-600" />
         <AlertDescription className="text-blue-800">
           Add this service account email as an Owner in your Google Search Console properties:
@@ -175,7 +175,7 @@ const GscSettings = () => {
             {SERVICE_ACCOUNT_EMAIL}
           </p>
         </AlertDescription>
-      </Alert>
+      </Alert> */}
 
       {hasStoredKey ? (
         <Alert className="bg-green-50 text-green-800 border-green-200">
@@ -211,7 +211,7 @@ const GscSettings = () => {
                 value={serviceAccountKey}
                 onChange={(e) => setServiceAccountKey(e.target.value)}
                 placeholder="Paste your service account JSON key here"
-                className="min-h-[200px] font-mono text-sm"
+                className="min-h-[100px] font-mono text-sm"
                 required
               />
             </div>
